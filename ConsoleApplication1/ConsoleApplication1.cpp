@@ -1,30 +1,29 @@
 #include <iostream>
-#include <stdlib.h>
 #include <locale.h>
 
 int main() {
-    // Declaração das variáveis para armazenar as notas
+
     double nota1, nota2, nota3, nota4;
 
-    // Solicita ao utilizador que insira as 4 notas
-    std::cout << "Por favor, insira a primeira nota: ";
+    std::cout << "Por favor, insira a nota do 1º teste: ";
     std::cin >> nota1;
 
-    std::cout << "Por favor, insira a segunda nota: ";
+    std::cout << "Por favor, insira a nota do 2º teste: ";
     std::cin >> nota2;
 
-    std::cout << "Por favor, insira a terceira nota: ";
+    std::cout << "Por favor, insira a nota do 3º teste: ";
     std::cin >> nota3;
 
-    std::cout << "Por favor, insira a quarta nota: ";
+    std::cout << "Por favor, insira a nota do 4º teste: ";
     std::cin >> nota4;
 
-    // Calcula a média das notas
-    double media = (nota1 + nota2 + nota3 + nota4) / 4;
+ 
+    double media = (nota1 * 0.5 + nota2 * 0.1 + nota3 * 0.1 + nota4 * 0.3);
 
-    // Exibe as notas e a média
+
     std::cout << "As notas inseridas são: " << nota1 << ", " << nota2 << ", " << nota3 << ", " << nota4 << std::endl;
-    std::cout << "A media das notas: " << media << std::endl;
+    std::cout << "A média ponderada das notas: " << media << std::endl;
 
     return 0;
 }
+
